@@ -22,7 +22,7 @@ const IdeaCard = ({ idea, onLike, onEdit, onDelete, onAddComment }) => {
   };
 
   const getTypeIcon = (type) => {
-    return type === 'task' ? '📋' : '💡';
+    return type === 'task' 
   };
 
   const handleCommentSubmit = (e) => {
@@ -55,10 +55,10 @@ const IdeaCard = ({ idea, onLike, onEdit, onDelete, onAddComment }) => {
           {isCurrentUser && (
             <div className="owner-actions">
               <button className="edit-btn" onClick={() => onEdit(idea)} title="Edit">
-                ✏️
+                
               </button>
               <button className="delete-btn" onClick={() => onDelete(idea.id)} title="Delete">
-                🗑️
+                
               </button>
             </div>
           )}

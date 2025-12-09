@@ -1,6 +1,160 @@
 {
   "ideas": [
     {
+      "id": 13,
+      "title": "asdfghjkl./",
+      "description": "qwertyuiop;'",
+      "category": "Technology",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [
+        {
+          "id": 1765278663291,
+          "author": "You",
+          "text": "asjkcxs cxawxdyuawxjsak",
+          "createdAt": "12/9/2025"
+        }
+      ],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 12,
+      "title": "1234567890asdfghjkl",
+      "description": "dcfvgnm,.",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 11,
+      "title": "asdfghjk",
+      "description": "123456789iknmvc ",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 10,
+      "title": "study",
+      "description": "adfghjk",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [
+        {
+          "id": 1765264071466,
+          "author": "You",
+          "text": "asdfghjk",
+          "createdAt": "12/9/2025"
+        }
+      ],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 9,
+      "title": "Study",
+      "description": "We have to do study together",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [
+        {
+          "id": 1765263687494,
+          "author": "You",
+          "text": "dfghjkl",
+          "createdAt": "12/9/2025"
+        },
+        {
+          "id": 1765263693238,
+          "author": "You",
+          "text": "asdfghjkl",
+          "createdAt": "12/9/2025"
+        }
+      ],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 8,
+      "title": "wertyuikmn ",
+      "description": "asdfghjkl",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [
+        {
+          "id": 1765263292567,
+          "author": "You",
+          "text": "hiiki",
+          "createdAt": "12/9/2025"
+        }
+      ],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 7,
+      "title": "12345678",
+      "description": "werthnm",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 6,
+      "title": "team",
+      "description": "aq1dsxb nzsm",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 5,
+      "title": "aern",
+      "description": "yghbn ",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 4,
+      "title": "book",
+      "description": "i will study",
+      "category": "Research",
+      "type": "idea",
+      "createdAt": "12/9/2025",
+      "likes": 0,
+      "comments": [],
+      "author": "current-user",
+      "liked": false
+    },
+    {
       "id": 1,
       "title": "Study Group for Machine Learning",
       "description": "Looking for students to form a study group for ML concepts. We'll meet weekly to discuss algorithms, work on projects, and prepare for exams together.",
@@ -39,6 +193,12 @@
           "author": "Mike",
           "text": "Great idea! I'd love to help develop this.",
           "createdAt": "7/12/2025"
+        },
+        {
+          "id": 1765272040599,
+          "author": "You",
+          "text": "hii",
+          "createdAt": "12/9/2025"
         }
       ],
       "author": "other-user",
@@ -57,5 +217,5 @@
       "liked": false
     }
   ],
-  "nextId": 4
+  "nextId": 14
 }

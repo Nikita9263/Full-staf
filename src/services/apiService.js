@@ -5,11 +5,17 @@ class ApiService {
   // Fetch all tasks and ideas
   async fetchIdeas() {
     try {
+      console.log('Fetching from:', `${API_BASE_URL}/ideas`);
       const response = await fetch(`${API_BASE_URL}/ideas`);
+      console.log('Response status:', response.status);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      const ideas = await response.json();
+      const result = await response.json();
+      console.log('Fetch API response:', result);
+      // Extract data from the response object
+      const ideas = result.success ? result.data : [];
+      console.log('Extracted ideas:', ideas.length, 'items');
       return ideas;
     } catch (error) {
       console.error('Error fetching ideas:', error);
@@ -32,11 +38,31 @@ class ApiService {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const createdIdea = await response.json();
-      return createdIdea;
+      const result = await response.json();
+      console.log('CreateIdea API response:', result);
+      // Extract data from the response object
+      return result.success ? result.data : result;
     } catch (error) {
-      console.error('Error creating idea:', error);
-      throw error;
+      console.error('Backend unavailable, using offline mode');
+      // Offline mode - create idea locally
+      // Get next available ID from localStorage
+      const savedIdeas = JSON.parse(localStorage.getItem('ideas') || '[]');
+      const maxId = savedIdeas.length > 0 ? Math.max(...savedIdeas.map(i => i.id)) : 0;
+      
+      const offlineIdea = {
+        id: maxId + 1,
+        title: ideaData.title,
+        description: ideaData.description,
+        category: ideaData.category || 'Other',
+        type: ideaData.type || 'idea',
+        createdAt: new Date().toLocaleDateString(),
+        likes: 0,
+        comments: [],
+        author: 'current-user',
+        liked: false
+      };
+      console.log('Created offline idea:', offlineIdea);
+      return offlineIdea;
     }
   }
 

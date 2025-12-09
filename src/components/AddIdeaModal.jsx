@@ -51,8 +51,8 @@ const AddIdeaModal = ({ isOpen, onClose, onSubmit }) => {
               value={formData.type}
               onChange={handleChange}
             >
-              <option value="task">📋 Task (Looking for help/collaboration)</option>
-              <option value="idea">💡 Idea (Sharing a concept/project)</option>
+              <option value="task"> Task (Looking for help/collaboration)</option>
+              <option value="idea">Idea (Sharing a concept/project)</option>
             </select>
           </div>
 
@@ -90,15 +90,15 @@ const AddIdeaModal = ({ isOpen, onClose, onSubmit }) => {
               value={formData.category}
               onChange={handleChange}
             >
-              <option value="Education">📚 Education & Study</option>
-              <option value="Technology">💻 Technology & Programming</option>
-              <option value="Research">🔬 Research & Projects</option>
-              <option value="Social">👥 Social & Events</option>
-              <option value="Business">💼 Business & Entrepreneurship</option>
-              <option value="Health">🏥 Health & Wellness</option>
-              <option value="Arts">🎨 Arts & Creative</option>
-              <option value="Sports">⚽ Sports & Recreation</option>
-              <option value="Other">🔖 Other</option>
+              <option value="Education"> Education & Study</option>
+              <option value="Technology"> Technology & Programming</option>
+              <option value="Research">Research & Projects</option>
+              <option value="Social">Social & Events</option>
+              <option value="Business"> Business & Entrepreneurship</option>
+              <option value="Health">Health & Wellness</option>
+              <option value="Arts"> Arts & Creative</option>
+              <option value="Sports"> Sports & Recreation</option>
+              <option value="Other"> Other</option>
             </select>
           </div>
 

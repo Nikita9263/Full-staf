@@ -11,7 +11,10 @@ const LoginPage = ({ onLogin, onSwitchToSignup }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  console.log('LoginPage render - formData:', formData);
+
   const handleChange = (e) => {
+    console.log('Input change detected:', e.target.name, e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -97,8 +100,8 @@ const LoginPage = ({ onLogin, onSwitchToSignup }) => {
           {/* Form */}
           <div className="login-form-container">
             <div className="form-header">
-              <h2>{isLoginMode ? 'Welcome Back!' : 'Join StudentHub'}</h2>
-              <p>{isLoginMode ? 'Sign in to your account' : 'Create your account to get started'}</p>
+              <h2>{isLoginMode ? 'Sign in with Email' : 'Join StudentHub'}</h2>
+              <p>{isLoginMode ? 'Enter your email and password to continue' : 'Create your account to get started'}</p>
             </div>
 
             <form onSubmit={handleSubmit} className="login-form">
@@ -108,6 +111,8 @@ const LoginPage = ({ onLogin, onSwitchToSignup }) => {
                   {error}
                 </div>
               )}
+
+
 
               {!isLoginMode && (
                 <div className="form-group">

@@ -128,7 +128,9 @@ function App() {
   };
 
   const handleAddIdeaClick = () => {
+    console.log('Add Task button clicked!');
     setIsAddIdeaOpen(true);
+    console.log('Add Task modal state set to true');
   };
 
   const handleAddIdea = async (ideaData) => {
@@ -259,6 +261,7 @@ function App() {
 
       {isAddIdeaOpen && (
         <AddIdeaModal 
+          isOpen={isAddIdeaOpen}
           onClose={() => setIsAddIdeaOpen(false)} 
           onSubmit={handleAddIdea}
         />

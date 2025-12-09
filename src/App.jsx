@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import AddIdeaModal from './components/AddIdeaModal'
 import LoginModal from './components/LoginModal'
 import SignupModal from './components/SignupModal'
+import LoginPage from './components/LoginPage'
 import IdeaCard from './components/IdeaCard'
 import { apiService } from './services/apiService'
 import './App.css'
@@ -128,9 +129,7 @@ function App() {
   };
 
   const handleAddIdeaClick = () => {
-    console.log('Add Task button clicked!');
     setIsAddIdeaOpen(true);
-    console.log('Add Task modal state set to true');
   };
 
   const handleAddIdea = async (ideaData) => {
@@ -194,6 +193,12 @@ function App() {
     }
   };
 
+  // If user is not logged in, show login page
+  if (!user) {
+    return <LoginPage onLogin={handleLogin} />;
+  }
+
+  // If user is logged in, show main app
   return (
     <>
       <Navbar 

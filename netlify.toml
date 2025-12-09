@@ -1,0 +1,30 @@
+[build]
+  # Directory where the build output is located
+  publish = "dist"
+  
+  # Build command to run
+  command = "npm run build"
+
+# Redirect rules for Single Page Application (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets for better performance
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, immutable, max-age=31536000"
+
+# Environment variables (will be set in Netlify dashboard)
+# API_BASE_URL will need to be configured for backend connection

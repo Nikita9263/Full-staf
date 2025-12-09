@@ -1,0 +1,281 @@
+/* Modern Auth Modal Styles - Based on User's Design */
+
+/* Modal Overlay */
+.modern-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modern Modal Card */
+.modern-modal-card {
+  background: #f8f9fa;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.4s ease-out;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* User Icon */
+.user-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 2rem 0;
+  letter-spacing: 2px;
+}
+
+/* Form Styles */
+.modern-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modern-form-group {
+  position: relative;
+}
+
+.modern-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: white;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.modern-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.modern-input::placeholder {
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+.modern-input:disabled {
+  background-color: #f7fafc;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.modern-error-message {
+  background: #fed7d7;
+  border: 1px solid #feb2b2;
+  color: #c53030;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form Actions */
+.modern-form-actions {
+  margin-top: 1rem;
+}
+
+.modern-login-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.3);
+}
+
+.modern-login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+}
+
+.modern-login-btn:active {
+  transform: translateY(0);
+}
+
+.modern-login-btn:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.modern-login-btn.loading {
+  background: #cbd5e0;
+  cursor: wait;
+}
+
+/* Auth Footer */
+.modern-auth-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.modern-auth-footer p {
+  color: #718096;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.modern-link-btn {
+  background: none;
+  border: none;
+  color: #4299e1;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.modern-link-btn:hover {
+  color: #3182ce;
+}
+
+.modern-link-btn:disabled {
+  color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .modern-modal-card {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .user-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .user-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modern-input {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .modern-login-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for loading state */
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Focus management */
+.modern-modal-card:focus-within {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Accessibility improvements */
+.modern-input:focus-visible {
+  outline: 2px solid #4299e1;
+  outline-offset: 2px;
+}
+
+.modern-login-btn:focus-visible {
+  outline: 2px solid #4299e1;
+  outline-offset: 2px;
+}

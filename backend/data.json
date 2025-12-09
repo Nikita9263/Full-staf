@@ -1,0 +1,61 @@
+{
+  "ideas": [
+    {
+      "id": 1,
+      "title": "Study Group for Machine Learning",
+      "description": "Looking for students to form a study group for ML concepts. We'll meet weekly to discuss algorithms, work on projects, and prepare for exams together.",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "8/12/2025",
+      "likes": 5,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Alex",
+          "text": "I'm interested! What time works best?",
+          "createdAt": "8/12/2025"
+        }
+      ],
+      "author": "current-user",
+      "liked": false
+    },
+    {
+      "id": 2,
+      "title": "Smart Campus Navigation App",
+      "description": "An idea for a mobile app that helps students navigate large campus buildings using AR technology. It could show directions, room availability, and event information.",
+      "category": "Technology",
+      "type": "idea",
+      "createdAt": "7/12/2025",
+      "likes": 12,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Sarah",
+          "text": "This would be so helpful! Have you considered integration with campus WiFi?",
+          "createdAt": "7/12/2025"
+        },
+        {
+          "id": 2,
+          "author": "Mike",
+          "text": "Great idea! I'd love to help develop this.",
+          "createdAt": "7/12/2025"
+        }
+      ],
+      "author": "other-user",
+      "liked": false
+    },
+    {
+      "id": 3,
+      "title": "Need Research Partner for Psychology Project",
+      "description": "Working on a research project about social media's impact on student mental health. Need a partner to help with data collection and analysis.",
+      "category": "Education",
+      "type": "task",
+      "createdAt": "6/12/2025",
+      "likes": 3,
+      "comments": [],
+      "author": "other-user",
+      "liked": false
+    }
+  ],
+  "nextId": 4
+}

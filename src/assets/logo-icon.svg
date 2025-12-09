@@ -1,0 +1,33 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<!-- Lightbulb with idea/brainstorming concept -->
+<circle cx="32" cy="28" r="12" fill="#FFD93D" stroke="#333" stroke-width="2"/>
+<path d="M26 40h12v6h-12z" fill="#8B4513" stroke="#333" stroke-width="1.5"/>
+<path d="M28 46h8v2h-8z" fill="#333"/>
+<path d="M32 16v-4M20.7 20.7l-2.8-2.8M43.3 20.7l2.8-2.8M16 32h-4M52 32h-4M20.7 43.3l-2.8 2.8M43.3 43.3l2.8 2.8" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+
+<!-- People icons -->
+<circle cx="16" cy="52" r="4" fill="#FF8A65" stroke="#333" stroke-width="1.5"/>
+<path d="M10 56h12c0-3.3-2.7-6-6-6s-6 2.7-6 6z" fill="#FF8A65" stroke="#333" stroke-width="1.5"/>
+
+<circle cx="32" cy="52" r="4" fill="#42A5F5" stroke="#333" stroke-width="1.5"/>
+<path d="M26 56h12c0-3.3-2.7-6-6-6s-6 2.7-6 6z" fill="#42A5F5" stroke="#333" stroke-width="1.5"/>
+
+<circle cx="48" cy="52" r="4" fill="#FF8A65" stroke="#333" stroke-width="1.5"/>
+<path d="M42 56h12c0-3.3-2.7-6-6-6s-6 2.7-6 6z" fill="#FF8A65" stroke="#333" stroke-width="1.5"/>
+
+<!-- Computer/Device icons -->
+<rect x="8" y="36" width="8" height="6" fill="#42A5F5" stroke="#333" stroke-width="1.5"/>
+<rect x="10" y="38" width="4" height="2" fill="white"/>
+<rect x="8" y="42" width="8" height="1" fill="#333"/>
+
+<rect x="48" y="36" width="8" height="6" fill="#42A5F5" stroke="#333" stroke-width="1.5"/>
+<rect x="50" y="38" width="4" height="2" fill="white"/>
+<rect x="48" y="42" width="8" height="1" fill="#333"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>
